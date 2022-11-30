@@ -2,6 +2,7 @@ package com.example.algorithmlearning.sort;
 
 import java.util.List;
 import java.util.Collections;
+import org.springframework.lang.NonNull;
 
 public class SortUtils {
 
@@ -22,6 +23,24 @@ public class SortUtils {
 
       if (!swapped) {
         break;
+      }
+    }
+
+    return src;
+  }
+
+  public static List<Integer> selection(@NonNull final List<Integer> src) {
+    for (int outer=0; outer < src.size()-1; outer++) {
+      int minIndex = outer;
+
+      for (int inner=outer+1; inner<src.size(); inner++) {
+        if (src.get(minIndex) > src.get(inner)) {
+          minIndex = inner;
+        }
+      }
+
+      if (minIndex != outer) {
+        Collections.swap(src, minIndex, outer);
       }
     }
 

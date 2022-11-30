@@ -11,9 +11,7 @@ class SortUtilsTest {
   void thenAscSorted_whenBubbleSort_givenRandomIntegers() {
     // given
     final var list = new ArrayList<Integer>();
-    for (int i = 0; i < 100; i++) {
-      list.add((int) (Math.random() * 100));
-    }
+    addHundredRandoms(list);
 
     final var expected = new ArrayList<>(list);
 
@@ -24,4 +22,26 @@ class SortUtilsTest {
     // then
     Assertions.assertThat(result).isEqualTo(expected);
   }
+
+  @Test
+  void thenAscSorted_whenSelectionSort_givenRandomIntegers() {
+    // given
+    final var list = new ArrayList<Integer>();
+    addHundredRandoms(list);
+
+    final var expected = new ArrayList<>(list);
+
+    // when
+    final var result = SortUtils.selection(list);
+    Collections.sort(expected);
+
+    Assertions.assertThat(result).isEqualTo(expected);
+  }
+
+  private void addHundredRandoms(ArrayList<Integer> list) {
+    for (int i = 0; i < 100; i++) {
+      list.add((int) (Math.random() * 100));
+    }
+  }
+
 }
