@@ -53,6 +53,8 @@ public class SortUtils {
       for (int j=i+1; j>0; j--) {
         if (src.get(j) < src.get(j-1)) {
           Collections.swap(src, j, j-1);
+        } else {
+          break;
         }
       }
     }
