@@ -47,11 +47,7 @@ public class MergeSort {
       }
     }
 
-    if (rightPointer == 0) {
-      result.addAll(list2);
-    } else if (leftPointer == 0) {
-      result.addAll(list1);
-    } else if (rightPointer < rightSize) {
+    if (rightPointer < rightSize) {
       result.addAll(list2.subList(rightPointer, rightSize));
     } else {
       result.addAll(list1.subList(leftPointer, leftSize));

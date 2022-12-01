@@ -1,13 +1,9 @@
 package com.example.algorithmlearning.sort;
 
-import static com.example.algorithmlearning.sort.SortTestUtils.addHundredRandoms;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Collections;
-import java.util.List;
 import java.util.ArrayList;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 class MergeSortTest {
