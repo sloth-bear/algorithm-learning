@@ -7,10 +7,6 @@ public class FibonacciAlgorithm {
   }
 
   public static int get(final int n) {
-    if (n == 0) {
-      return 0;
-    }
-
-    return n == 1 ? 1 : get(n-1) + get(n-2);
+    return n <= 1 ? n : get(n-1) + get(n-2);
   }
 }
