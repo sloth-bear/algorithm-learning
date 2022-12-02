@@ -1,6 +1,6 @@
 package com.example.algorithmlearning.sort;
 
-import static com.example.algorithmlearning.sort.SortTestUtils.addHundredRandoms;
+import static com.example.algorithmlearning.sort.util.SortTestUtils.addHundredRandoms;
 
 import java.util.ArrayList;
 import java.util.Collections;

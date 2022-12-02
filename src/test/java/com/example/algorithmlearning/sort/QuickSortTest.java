@@ -1,27 +1,26 @@
 package com.example.algorithmlearning.sort;
 
-import static com.example.algorithmlearning.sort.util.SortTestUtils.addHundredRandoms;
-
+import com.example.algorithmlearning.sort.util.SortTestUtils;
 import java.util.ArrayList;
 import java.util.Collections;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class InsertionSortTest {
+class QuickSortTest {
 
   @Test
-  void thenAscSorted_whenInsertionSort_givenRandomIntegers() {
+  void thenAscSorted_whenBubbleSort_givenRandomIntegers() {
     // given
     final var list = new ArrayList<Integer>();
-    addHundredRandoms(list);
+    SortTestUtils.addHundredRandoms(list);
 
     final var expected = new ArrayList<>(list);
 
     // when
-    final var result = InsertionSort.sort(list);
+    final var result = QuickSort.sort(list);
     Collections.sort(expected);
 
+    // then
     Assertions.assertThat(result).isEqualTo(expected);
   }
-
 }

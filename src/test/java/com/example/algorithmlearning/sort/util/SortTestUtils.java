@@ -1,4 +1,4 @@
-package com.example.algorithmlearning.sort;
+package com.example.algorithmlearning.sort.util;
 
 import java.util.ArrayList;
 
