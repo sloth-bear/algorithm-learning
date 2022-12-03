@@ -28,7 +28,7 @@ public class BfsSearch {
 
     final var adjacentVertexes = new ArrayList<>(graph.get(startVertex));
 
-    while (adjacentVertexes.size() > 0) {
+    while (!adjacentVertexes.isEmpty()) {
       final var firstAVertex = adjacentVertexes.remove(0);
       if (!result.contains(firstAVertex)) {
         result.add(firstAVertex);

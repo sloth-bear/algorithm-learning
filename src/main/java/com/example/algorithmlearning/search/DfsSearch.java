@@ -3,7 +3,6 @@ package com.example.algorithmlearning.search;
 import static java.util.Collections.emptyList;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
