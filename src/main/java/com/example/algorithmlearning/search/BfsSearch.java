@@ -20,7 +20,9 @@ public class BfsSearch {
     throw new UnsupportedOperationException();
   }
 
-  public static List<String> search(final Map<String, List<String>> graph, final String startVertex) {
+  public static List<String> search(
+      final Map<String, List<String>> graph,
+      final String startVertex) {
     final var result = new ArrayList<String>();
     result.add(startVertex);
 
