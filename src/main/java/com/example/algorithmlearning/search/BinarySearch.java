@@ -19,7 +19,7 @@ public class BinarySearch {
    * @throws NullPointerException src가 null일 경우 발생함. src 내 요소 중 null이 존재할 경우에도 발생할 수 있음
    * @return 찾고자 하는 element가 src에 존재할 경우 true, 존재하지 않을 경우 false
    */
-  public static boolean has(final List <Integer> src, final Integer element) {
+  public static boolean contains(final List <Integer> src, final Integer element) {
     if (src.size() == 1) {
       return src.get(0).equals(element);
     }
@@ -28,6 +28,6 @@ public class BinarySearch {
     final var half = size / 2;
     final var halfList = src.get(half).compareTo(element) > 0 ? src.subList(0, half): src.subList(half, size);
 
-    return has(halfList, element);
+    return contains(halfList, element);
   }
 }
