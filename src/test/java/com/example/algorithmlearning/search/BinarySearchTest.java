@@ -2,6 +2,7 @@ package com.example.algorithmlearning.search;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import com.example.algorithmlearning.search.BinarySearch;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 

@@ -1,7 +1,8 @@
-package com.example.algorithmlearning.bruteforce;
+package com.example.algorithmlearning.math;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import com.example.algorithmlearning.math.FactorialAlgorithm;
 import org.junit.jupiter.api.Test;
 
 class FactorialAlgorithmTest {

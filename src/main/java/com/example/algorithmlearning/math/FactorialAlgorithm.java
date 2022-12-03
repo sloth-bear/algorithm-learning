@@ -1,4 +1,4 @@
-package com.example.algorithmlearning.bruteforce;
+package com.example.algorithmlearning.math;
 
 import java.util.stream.IntStream;
 

@@ -1,10 +1,9 @@
 package com.example.algorithmlearning.search;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
+import com.example.algorithmlearning.search.SequentialSearch;
 import java.util.List;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 class SequentialSearchTest {

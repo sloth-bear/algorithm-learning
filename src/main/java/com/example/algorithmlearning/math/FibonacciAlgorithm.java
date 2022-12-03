@@ -1,4 +1,4 @@
-package com.example.algorithmlearning.bruteforce;
+package com.example.algorithmlearning.math;
 
 public class FibonacciAlgorithm {
 
