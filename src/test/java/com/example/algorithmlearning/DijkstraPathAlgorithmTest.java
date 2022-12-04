@@ -1,17 +1,16 @@
-package com.example.algorithmlearning.search.graph;
+package com.example.algorithmlearning;
 
-import static org.junit.jupiter.api.Assertions.*;
-
+import com.example.algorithmlearning.search.graph.Edge;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class DijkstraPathSearchTest {
+class DijkstraPathAlgorithmTest {
 
   @Test
-  void test() {
+  void thenShortestPathsAll_whenShortestDistances_givenGraph() {
     // given
     final Map<String, List<Edge>> graph = Map.of(
         "A", Arrays.asList(Edge.of(8, "B"), Edge.of(1, "C"), Edge.of(2, "D")),
@@ -31,7 +30,7 @@ class DijkstraPathSearchTest {
     );
 
     // when
-    final Map<String, Integer> result = DijkstraPathSearch.shortestDistances(graph, "A");
+    final Map<String, Integer> result = DijkstraPathAlgorithm.shortestDistances(graph, "A");
 
     // then
     Assertions.assertThat(result).isEqualTo(expected);

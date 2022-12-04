@@ -1,13 +1,14 @@
-package com.example.algorithmlearning.search.graph;
+package com.example.algorithmlearning;
 
+import com.example.algorithmlearning.search.graph.Edge;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
 
-public class DijkstraPathSearch {
+public class DijkstraPathAlgorithm {
 
-  private DijkstraPathSearch() {
+  private DijkstraPathAlgorithm() {
     throw new UnsupportedOperationException();
   }
 
@@ -19,7 +20,6 @@ public class DijkstraPathSearch {
 
     while (!pq.isEmpty()) {
       final Edge vertex = pq.poll();
-      System.out.println("start vertex: " + vertex.getTargetVertex());
 
       if (shortestDistances.get(vertex.getTargetVertex()) < vertex.getDistance()) {
         continue;
