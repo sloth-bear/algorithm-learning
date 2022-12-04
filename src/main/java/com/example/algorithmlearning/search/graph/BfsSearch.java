@@ -1,4 +1,4 @@
-package com.example.algorithmlearning.search;
+package com.example.algorithmlearning.search.graph;
 
 import static java.util.Collections.emptyList;
 
