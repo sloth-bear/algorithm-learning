@@ -12,7 +12,7 @@ public class UnionFindAlgorithm {
   private final Map<String, String> parentMap = new HashMap<>();
   private final Map<String, Integer> rankMap = new HashMap<>();
 
-  public List<Edge> doKruskalAlgorithm(final List<String> vertexes, List<Edge> edges) {
+  public List<Edge> doKruskalAlgorithm(final List<String> vertexes, final List<Edge> edges) {
     final List<Edge> result = new ArrayList<>();
 
     // 1. 초기화
@@ -24,7 +24,8 @@ public class UnionFindAlgorithm {
     Collections.sort(edges);
 
     for (final var edge : edges) {
-      if (!find(edge.nodeV).equals(edge.nodeU)) {
+      if (!find(edge.nodeV).equals(find(edge.nodeU))) {
+        System.out.println(edge);
         union(edge.nodeV, edge.nodeU);
         result.add(edge);
       }
