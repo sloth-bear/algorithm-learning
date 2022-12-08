@@ -1,6 +1,6 @@
-package com.example.algorithmlearning.graph;
+package com.example.algorithmlearning.mst;
 
-import com.example.algorithmlearning.graph.edge.Edge;
+import com.example.algorithmlearning.mst.edge.Edge;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

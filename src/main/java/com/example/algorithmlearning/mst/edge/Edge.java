@@ -1,4 +1,4 @@
-package com.example.algorithmlearning.graph.edge;
+package com.example.algorithmlearning.mst.edge;
 
 public class Edge implements Comparable<Edge> {
 
