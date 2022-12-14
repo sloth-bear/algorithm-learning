@@ -1,10 +1,10 @@
 package com.example.algorithmlearning;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.stream.IntStream;
 
 /**
  * Greedy algorithm solution 2
@@ -29,22 +29,17 @@ import java.util.Scanner;
  */
 public class ProjectTeamsSolution {
 
-  public static void main(final String[] args) {
-    final Scanner sc = new Scanner(System.in);
+  public static void main(final String[] args) throws IOException {
+    final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-    final String numberOfTeam = sc.nextLine();
-    final int[] abilities = Arrays.stream(sc.nextLine().split(" "))
+    final int numberOfTeam = Integer.parseInt(br.readLine());
+    final int[] abilities = Arrays.stream(br.readLine().split(" "))
         .mapToInt(Integer::parseInt)
         .sorted()
         .toArray();
 
-    final Map<Integer, List<Integer>> teams = new HashMap<>();
-    for (int i = 0; i < Integer.parseInt(numberOfTeam); i++) {
-      teams.put(i + 1, List.of(abilities[i], abilities[abilities.length - i -1]));
-    }
-
-    final int minAbilitySum = teams.values().stream()
-        .mapToInt(a -> a.get(0) + a.get(1))
+    final int minAbilitySum = IntStream.range(0, numberOfTeam)
+        .map(i -> abilities[i] + abilities[abilities.length - 1 - i])
         .min()
         .orElse(-1);
 
