@@ -3,6 +3,7 @@ package com.example.algorithmlearning.greedy;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+@Deprecated
 class PurchaseRamenMoneyCalculatorTest {
 
   @Test

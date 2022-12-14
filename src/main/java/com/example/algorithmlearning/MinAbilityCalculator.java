@@ -27,7 +27,7 @@ import java.util.stream.IntStream;
  *
  * @see <a href="https://www.acmicpc.net/problem/20044">BAEKJOON = Project Teams</a>
  */
-public class ProjectTeamsSolution {
+public class MinAbilityCalculator {
 
   public static void main(final String[] args) throws IOException {
     final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

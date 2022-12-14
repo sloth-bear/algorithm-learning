@@ -16,7 +16,9 @@ import java.util.Map;
  * 최소의 비용으로 라면을 구매하고자 할 때, 교준이가 필요한 금액을 계산한다.
  *
  * @see <a href="https://www.acmicpc.net/problem/18185">BAEKJOON - 18185</a>
+ * @deprecated 틀렸기 때문에 다시 풀 예정
  */
+@Deprecated
 public class PurchaseRamenMoneyCalculator {
 
   private PurchaseRamenMoneyCalculator() {
