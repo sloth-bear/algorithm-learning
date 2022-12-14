@@ -1,5 +1,6 @@
-package com.example.algorithmlearning;
+package com.example.algorithmlearning.search;
 
+import com.example.algorithmlearning.search.DijkstraPathAlgorithm;
 import com.example.algorithmlearning.search.graph.Edge;
 import java.util.Arrays;
 import java.util.List;
